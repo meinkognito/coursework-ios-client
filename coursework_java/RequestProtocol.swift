@@ -71,9 +71,14 @@ extension RequestProtocol {
     urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
 
     if !params.isEmpty {
-      urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params)
+      if JSONSerialization.isValidJSONObject(params) {
+        urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params)
+      } else {
+        if let book = params.first!.value as? Book {
+          urlRequest.httpBody = try? JSONEncoder().encode(book)
+        }
+      }
     }
-
     return urlRequest
   }
 }

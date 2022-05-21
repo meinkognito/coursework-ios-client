@@ -7,8 +7,12 @@
 
 import Foundation
 
-struct BookType: Codable {
+struct BookType: Codable, Library {
   let id: Int
   var name: String
   var count, fine, dayCount: Int
+
+  func isLibrary() -> Bool {
+    true
+  }
 }

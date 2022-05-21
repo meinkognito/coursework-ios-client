@@ -16,8 +16,8 @@ enum AuthTokenRequest: RequestProtocol {
 
   var params: [String: Any] {
     [
-      "username": User.user.username,
-      "password": User.user.password
+      "username": User.admin.username,
+      "password": User.admin.password
     ]
   }
 

@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol AuthManagerProtocol {
+protocol RequestPerformerProtocol {
   func requestToken() async throws -> Data
   func perform(_ request: RequestProtocol, authToken: String) async throws -> Data
 }
 
-class AuthManager: AuthManagerProtocol {
+class RequestPerformer: RequestPerformerProtocol {
   private let urlSession: URLSession
 
   init(urlSession: URLSession = URLSession.shared) {

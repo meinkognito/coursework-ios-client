@@ -28,4 +28,7 @@ extension Token {
   var expiresAt: Date {
     Calendar.current.date(byAdding: .minute, value: 30, to: requestedAt) ?? Date()
   }
+  var bearerToken: String {
+    "Bearer \(token)"
+  }
 }

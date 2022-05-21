@@ -11,30 +11,28 @@ enum BookRequest: RequestProtocol {
   case getAllBooks
   case getBookById(id: Int)
 
-  case addBook
+  case addBook(book: Book)
 
-  case updateBook(id: Int)
+  case updateBook(id: Int, with: Book)
 
   case deleteBook(id: Int)
 
   var path: String {
     switch self {
     case .getAllBooks: return "/books"
-    case let .getBookById(id): return "/book\(id)"
+    case let .getBookById(id): return "/book/\(id)"
     case .addBook: return "/addBook"
-    case let .updateBook(id): return "/updateBook\(id)"
-    case let .deleteBook(id): return "/deleteBook\(id)"
+    case let .updateBook(id, _): return "/updateBook/\(id)"
+    case let .deleteBook(id): return "/deleteBook/\(id)"
     }
   }
 
-  var urlParams: [String: String?] {
+  var params: [String: Any] {
     switch self {
-    case .getAllBooks, .addBook:
-      return [:]
-
-    case let .getBookById(id), let .updateBook(id), let .deleteBook(id):
-      var params: [String: String] = [:]
-      params["id"] = String(id)
+    case .getAllBooks, .getBookById, .deleteBook: return [:]
+    case let .addBook(book), let .updateBook(_, book):
+      var params: [String: Book] = [:]
+      params["empty"] = book
       return params
     }
   }

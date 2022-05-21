@@ -29,15 +29,28 @@ struct LoginView: View {
           .padding()
       }
       Button("Login", action: {
-        Task {
-          do {
-            let authManager = AuthManager()
-            let res = try await authManager.requestToken()
-            print(String(data: res, encoding: .utf8)!)
-          } catch {
-            print("error")
-          }
-        }
+//        Task {
+//          do {
+//            let authManager = AuthManager()
+//            let res = try await authManager.requestToken()
+//            print(String(data: res, encoding: .utf8)!)
+//          } catch {
+//            print("error")
+//          }
+//        }
+//        Task {
+//          do {
+//            let requestManager = RequestManager()
+//            let data: [Book] = try await requestManager.perform(BookRequest.getAllBooks)
+//            print(data)
+//
+//          } catch {
+//            print(error.localizedDescription)
+//          }
+//        }
+        
+        
+
       })
       .buttonStyle(.bordered)
       .foregroundColor(.black)

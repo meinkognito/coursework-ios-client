@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct Journal: Codable {
+struct Journal: Codable, Library {
   let id: Int
   var books: [Book]
   var clients: [Client]
   var beginDate, endDate, returnDate: String
+  
+  func isLibrary() -> Bool {
+    true
+  }
 }
 
