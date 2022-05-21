@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D62A0F328391BCE00A57193 /* BookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F228391BCE00A57193 /* BookRequest.swift */; };
+		2D62A0F52839226A00A57193 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F42839226A00A57193 /* RequestManager.swift */; };
+		2D62A0F7283922AF00A57193 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F6283922AF00A57193 /* DataParser.swift */; };
 		2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DD283664CE00203048 /* coursework_javaApp.swift */; };
 		2DD505E0283664CE00203048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DF283664CE00203048 /* ContentView.swift */; };
 		2DD505E2283664D700203048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD505E1283664D700203048 /* Assets.xcassets */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D62A0F228391BCE00A57193 /* BookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRequest.swift; sourceTree = "<group>"; };
+		2D62A0F42839226A00A57193 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		2D62A0F6283922AF00A57193 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
 		2DD505DA283664CE00203048 /* coursework_java.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coursework_java.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD505DD283664CE00203048 /* coursework_javaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coursework_javaApp.swift; sourceTree = "<group>"; };
 		2DD505DF283664CE00203048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,8 +90,10 @@
 				2DD505ED2836671B00203048 /* LoginViewModel.swift */,
 				2DEFC3A12837BE6100310668 /* MainView.swift */,
 				2DEFC3A32837C2B700310668 /* RequestProtocol.swift */,
+				2D62A0F42839226A00A57193 /* RequestManager.swift */,
 				2DEFC3A92838389B00310668 /* AuthManager.swift */,
 				2DEFC3AB283838E000310668 /* AuthTokenRequest.swift */,
+				2D62A0F6283922AF00A57193 /* DataParser.swift */,
 			);
 			path = coursework_java;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				2DEFC38E283678D100310668 /* Book.swift */,
+				2D62A0F228391BCE00A57193 /* BookRequest.swift */,
 				2DEFC390283678D900310668 /* BookType.swift */,
 				2DEFC392283678E000310668 /* Client.swift */,
 				2DEFC394283678E600310668 /* Journal.swift */,
@@ -184,11 +193,14 @@
 				2DD505EE2836671B00203048 /* LoginViewModel.swift in Sources */,
 				2DEFC3AA2838389B00310668 /* AuthManager.swift in Sources */,
 				2DEFC3A22837BE6100310668 /* MainView.swift in Sources */,
+				2D62A0F52839226A00A57193 /* RequestManager.swift in Sources */,
 				2DD505EC283664FD00203048 /* LoginView.swift in Sources */,
 				2DD505E0283664CE00203048 /* ContentView.swift in Sources */,
+				2D62A0F7283922AF00A57193 /* DataParser.swift in Sources */,
 				2DEFC395283678E600310668 /* Journal.swift in Sources */,
 				2DEFC3AE283838FC00310668 /* User.swift in Sources */,
 				2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */,
+				2D62A0F328391BCE00A57193 /* BookRequest.swift in Sources */,
 				2DEFC393283678E000310668 /* Client.swift in Sources */,
 				2DEFC3A62837CEDA00310668 /* Token.swift in Sources */,
 				2DEFC391283678D900310668 /* BookType.swift in Sources */,
