@@ -9,6 +9,7 @@ import Foundation
 
 protocol AuthManagerProtocol {
   func requestToken() async throws -> Data
+  func perform(_ request: RequestProtocol, authToken: String) async throws -> Data
 }
 
 class AuthManager: AuthManagerProtocol {
