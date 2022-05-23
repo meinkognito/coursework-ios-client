@@ -7,24 +7,20 @@
 
 import Foundation
 
-class ModelData: ObservableObject {
-  @Published var bookTypes = [BookType]()
+class ModelData {
+  var bookTypes = [BookType]()
 
-  @Published var books = [Book]()
+  var books = [Book]()
 
-  @Published var clients = [Client]()
+  var clients = [Client]()
 
-  @Published var journals = [Journal]()
+  var journals = [Journal]()
 
-  func loadData() async {
-    do {
-      let requestManager = RequestManager()
-      bookTypes = try await requestManager.perform(BookTypeRequest.getAll)
-      books = try await requestManager.perform(BookRequest.getAll)
-      clients = try await requestManager.perform(ClientRequest.getAll)
-      journals = try await requestManager.perform(JournalRequest.getAll)
-    } catch {
-      print(error.localizedDescription)
-    }
+  func loadData() async throws {
+    let requestManager = RequestManager()
+    bookTypes = try await requestManager.perform(BookTypeRequest.getAll)
+    books = try await requestManager.perform(BookRequest.getAll)
+    clients = try await requestManager.perform(ClientRequest.getAll)
+    journals = try await requestManager.perform(JournalRequest.getAll)
   }
 }
