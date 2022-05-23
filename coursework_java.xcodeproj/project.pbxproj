@@ -24,6 +24,9 @@
 		2D6D6683283BD5070042A3E7 /* ClientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6682283BD5070042A3E7 /* ClientsView.swift */; };
 		2D6D668B283BFCA10042A3E7 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D668A283BFCA10042A3E7 /* BookView.swift */; };
 		2D6D668D283C053A0042A3E7 /* ClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D668C283C053A0042A3E7 /* ClientView.swift */; };
+		2D6D6693283C0D0E0042A3E7 /* BookEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6692283C0D0D0042A3E7 /* BookEditor.swift */; };
+		2D6D6695283C0D200042A3E7 /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6694283C0D200042A3E7 /* BookInfo.swift */; };
+		2D6D6697283C2B890042A3E7 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6696283C2B880042A3E7 /* AddBookView.swift */; };
 		2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DD283664CE00203048 /* coursework_javaApp.swift */; };
 		2DD505E0283664CE00203048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DF283664CE00203048 /* ContentView.swift */; };
 		2DD505E2283664D700203048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD505E1283664D700203048 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 		2D6D6682283BD5070042A3E7 /* ClientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsView.swift; sourceTree = "<group>"; };
 		2D6D668A283BFCA10042A3E7 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		2D6D668C283C053A0042A3E7 /* ClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientView.swift; sourceTree = "<group>"; };
+		2D6D6692283C0D0D0042A3E7 /* BookEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookEditor.swift; sourceTree = "<group>"; };
+		2D6D6694283C0D200042A3E7 /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
+		2D6D6696283C2B880042A3E7 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		2DD505DA283664CE00203048 /* coursework_java.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coursework_java.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD505DD283664CE00203048 /* coursework_javaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coursework_javaApp.swift; sourceTree = "<group>"; };
 		2DD505DF283664CE00203048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,8 +137,50 @@
 			children = (
 				2DD505EB283664FD00203048 /* LoginView.swift */,
 				2DD505ED2836671B00203048 /* LoginViewModel.swift */,
+				2D6D6677283BC3980042A3E7 /* PageRouter.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		2D6D668E283C0A9D0042A3E7 /* client views */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D6682283BD5070042A3E7 /* ClientsView.swift */,
+				2D6D668C283C053A0042A3E7 /* ClientView.swift */,
+			);
+			path = "client views";
+			sourceTree = "<group>";
+		};
+		2D6D668F283C0AA70042A3E7 /* book views */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D6680283BD4AC0042A3E7 /* BooksView.swift */,
+				2D6D668A283BFCA10042A3E7 /* BookView.swift */,
+				2D6D6694283C0D200042A3E7 /* BookInfo.swift */,
+				2D6D6692283C0D0D0042A3E7 /* BookEditor.swift */,
+				2D6D6696283C2B880042A3E7 /* AddBookView.swift */,
+			);
+			path = "book views";
+			sourceTree = "<group>";
+		};
+		2D6D6690283C0AB20042A3E7 /* journal views */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D6675283BC37F0042A3E7 /* JournalsView.swift */,
+				2D6D667E283BD34A0042A3E7 /* JournalView.swift */,
+			);
+			path = "journal views";
+			sourceTree = "<group>";
+		};
+		2D6D6691283C0ABF0042A3E7 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2DD505DF283664CE00203048 /* ContentView.swift */,
+				2D6D6690283C0AB20042A3E7 /* journal views */,
+				2D6D668F283C0AA70042A3E7 /* book views */,
+				2D6D668E283C0A9D0042A3E7 /* client views */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		2DD505D1283664CE00203048 = {
@@ -157,18 +205,11 @@
 				2DD505E3283664D700203048 /* Preview Content */,
 				2D62A0FA28394D0700A57193 /* network */,
 				2D6D666C283BA43C0042A3E7 /* requests test views */,
+				2D6D6679283BC5D90042A3E7 /* login */,
 				2DEFC3962836790200310668 /* model */,
 				2DD505DD283664CE00203048 /* coursework_javaApp.swift */,
-				2DD505DF283664CE00203048 /* ContentView.swift */,
+				2D6D6691283C0ABF0042A3E7 /* views */,
 				2DD505E1283664D700203048 /* Assets.xcassets */,
-				2D6D6679283BC5D90042A3E7 /* login */,
-				2D6D6677283BC3980042A3E7 /* PageRouter.swift */,
-				2D6D6675283BC37F0042A3E7 /* JournalsView.swift */,
-				2D6D667E283BD34A0042A3E7 /* JournalView.swift */,
-				2D6D6680283BD4AC0042A3E7 /* BooksView.swift */,
-				2D6D668A283BFCA10042A3E7 /* BookView.swift */,
-				2D6D6682283BD5070042A3E7 /* ClientsView.swift */,
-				2D6D668C283C053A0042A3E7 /* ClientView.swift */,
 			);
 			path = coursework_java;
 			sourceTree = "<group>";
@@ -282,6 +323,7 @@
 				2D6D6664283AC9330042A3E7 /* JournalRequest.swift in Sources */,
 				2D6D668B283BFCA10042A3E7 /* BookView.swift in Sources */,
 				2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */,
+				2D6D6695283C0D200042A3E7 /* BookInfo.swift in Sources */,
 				2D62A0F328391BCE00A57193 /* BookRequest.swift in Sources */,
 				2DEFC393283678E000310668 /* Client.swift in Sources */,
 				2D6D665C283AC4460042A3E7 /* ClientRequest.swift in Sources */,
@@ -293,8 +335,10 @@
 				2D6D668D283C053A0042A3E7 /* ClientView.swift in Sources */,
 				2D6D6678283BC3980042A3E7 /* PageRouter.swift in Sources */,
 				2DEFC3AC283838E000310668 /* AuthTokenRequest.swift in Sources */,
+				2D6D6693283C0D0E0042A3E7 /* BookEditor.swift in Sources */,
 				2DEFC38F283678D100310668 /* Book.swift in Sources */,
 				2DEFC3A42837C2B700310668 /* RequestProtocol.swift in Sources */,
+				2D6D6697283C2B890042A3E7 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
