@@ -135,16 +135,16 @@
 		2DD505DC283664CE00203048 /* coursework_java */ = {
 			isa = PBXGroup;
 			children = (
+				2DD505E3283664D700203048 /* Preview Content */,
+				2D62A0FA28394D0700A57193 /* network */,
+				2D6D666C283BA43C0042A3E7 /* requests test views */,
 				2DEFC3962836790200310668 /* model */,
 				2DD505DD283664CE00203048 /* coursework_javaApp.swift */,
 				2DD505DF283664CE00203048 /* ContentView.swift */,
 				2DD505E1283664D700203048 /* Assets.xcassets */,
-				2DD505E3283664D700203048 /* Preview Content */,
 				2DD505EB283664FD00203048 /* LoginView.swift */,
 				2DD505ED2836671B00203048 /* LoginViewModel.swift */,
-				2D6D666C283BA43C0042A3E7 /* requests test views */,
 				2D62A0FB28394D3100A57193 /* BooksView.swift */,
-				2D62A0FA28394D0700A57193 /* network */,
 			);
 			path = coursework_java;
 			sourceTree = "<group>";
