@@ -7,12 +7,8 @@
 
 import Foundation
 
-struct Client: Codable, Library {
+struct Client: Codable {
   let id: Int
   var firstName, lastName, patherName, passportSeria: String
   var passportNumber: String
-  
-  func isLibrary() -> Bool {
-    true
-  }
 }
