@@ -10,6 +10,9 @@ import SwiftUI
 struct LoginView: View {
   @State private var login = User.user.username
   @State private var password = User.user.password
+  var modelData = ModelData()
+  @State private var showingAlert = false
+  @State private var showingSheet = false
 
   var body: some View {
     VStack {
@@ -22,36 +25,29 @@ struct LoginView: View {
           .padding()
           .background(.bar)
           .padding(.horizontal)
+          .textInputAutocapitalization(.never)
 
         SecureField("Password:", text: self.$password)
           .padding()
           .background(.bar)
           .padding()
+          .textInputAutocapitalization(.never)
       }
       Button("Login", action: {
-//        Task {
-//          do {
-//            let authManager = AuthManager()
-//            let res = try await authManager.requestToken()
-//            print(String(data: res, encoding: .utf8)!)
-//          } catch {
-//            print("error")
-//          }
-//        }
-//        Task {
-//          do {
-//            let requestManager = RequestManager()
-//            let data: [Book] = try await requestManager.perform(BookRequest.getAllBooks)
-//            print(data)
-//
-//          } catch {
-//            print(error.localizedDescription)
-//          }
-//        }
-        
-        
-
+        Task {
+          do {
+            try await validateToken(username: login)
+            showingSheet = true
+          } catch {
+            print(error.localizedDescription)
+            showingAlert = true
+          }
+        }
       })
+      .sheet(isPresented: $showingSheet) {
+        BooksView()
+      }
+      .alert("Invalid credentials!", isPresented: $showingAlert, actions: {})
       .buttonStyle(.bordered)
       .foregroundColor(.black)
       .font(.title3.bold())
