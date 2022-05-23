@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct coursework_javaApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject private var pageRouter = PageRouter()
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView(pageRouter: pageRouter)
     }
+  }
 }
