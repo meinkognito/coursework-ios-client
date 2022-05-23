@@ -12,7 +12,7 @@ struct AddClient: View {
   @Binding var clients: [Client]
   @Environment(\.presentationMode) var presentationMode
   var body: some View {
-    VStack(alignment: .leading) {
+    VStack {
       HStack {
         Text("First name:").bold()
         TextField("", text: $client.firstName)
@@ -56,7 +56,7 @@ struct AddClient: View {
         }
       } label: {
         Text("Save")
-      }
+      }.buttonStyle(.bordered)
     }
     .padding()
   }

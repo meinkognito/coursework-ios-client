@@ -65,7 +65,7 @@ struct AddBookView: View {
         }
       } label: {
         Text("Save")
-      }
+      }.buttonStyle(.bordered)
     }
     .padding()
   }

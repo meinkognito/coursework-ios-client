@@ -21,6 +21,12 @@ struct JournalsView: View {
             Text("Journal - \(item.id)")
           }
         }
+        .onDelete { index in
+          journalService.items.remove(atOffsets: index)
+          Task {
+            let _: Journal = try await RequestManager().perform(JournalRequest.delete(id: index.first ?? 0))
+          }
+        }
       }.onAppear {
         Task {
           try? await journalService.fetch()
@@ -38,18 +44,6 @@ struct JournalsView: View {
         ))
     }
   }
-
-//  func delete(at offsets: IndexSet) {
-//    Task {
-//      let requestManager = RequestManager()
-//      do {
-//        let _: Journal = try await requestManager.perform(JournalRequest.delete(id: offsets.first!))
-//      } catch {
-//        print(error.localizedDescription)
-//      }
-//      journals.remove(atOffsets: offsets)
-//    }
-//  }
 }
 
 struct MainView_Previews: PreviewProvider {
