@@ -10,7 +10,15 @@
 		2D62A0F328391BCE00A57193 /* BookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F228391BCE00A57193 /* BookRequest.swift */; };
 		2D62A0F52839226A00A57193 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F42839226A00A57193 /* RequestManager.swift */; };
 		2D62A0F7283922AF00A57193 /* DataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F6283922AF00A57193 /* DataParser.swift */; };
-		2D62A0F92839473B00A57193 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0F82839473B00A57193 /* Library.swift */; };
+		2D62A0FC28394D3100A57193 /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0FB28394D3100A57193 /* BooksView.swift */; };
+		2D62A0FE28394DBB00A57193 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D62A0FD28394DBB00A57193 /* ModelData.swift */; };
+		2D6D665A283AC3280042A3E7 /* BookTypeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6659283AC3280042A3E7 /* BookTypeRequest.swift */; };
+		2D6D665C283AC4460042A3E7 /* ClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D665B283AC4460042A3E7 /* ClientRequest.swift */; };
+		2D6D6664283AC9330042A3E7 /* JournalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6663283AC9330042A3E7 /* JournalRequest.swift */; };
+		2D6D6666283ACA4D0042A3E7 /* BookTypesRequestsTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6665283ACA4D0042A3E7 /* BookTypesRequestsTestView.swift */; };
+		2D6D6669283BA20A0042A3E7 /* ClientsRequestTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D6668283BA20A0042A3E7 /* ClientsRequestTestView.swift */; };
+		2D6D666B283BA3060042A3E7 /* JournalTestRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D666A283BA3060042A3E7 /* JournalTestRequestsView.swift */; };
+		2D6D666E283BA4580042A3E7 /* RequestsTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D666D283BA4580042A3E7 /* RequestsTestView.swift */; };
 		2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DD283664CE00203048 /* coursework_javaApp.swift */; };
 		2DD505E0283664CE00203048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD505DF283664CE00203048 /* ContentView.swift */; };
 		2DD505E2283664D700203048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DD505E1283664D700203048 /* Assets.xcassets */; };
@@ -21,7 +29,7 @@
 		2DEFC391283678D900310668 /* BookType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC390283678D900310668 /* BookType.swift */; };
 		2DEFC393283678E000310668 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC392283678E000310668 /* Client.swift */; };
 		2DEFC395283678E600310668 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC394283678E600310668 /* Journal.swift */; };
-		2DEFC3A22837BE6100310668 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC3A12837BE6100310668 /* MainView.swift */; };
+		2DEFC3A22837BE6100310668 /* BookRequestsTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC3A12837BE6100310668 /* BookRequestsTestView.swift */; };
 		2DEFC3A42837C2B700310668 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC3A32837C2B700310668 /* RequestProtocol.swift */; };
 		2DEFC3A62837CEDA00310668 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC3A52837CEDA00310668 /* Token.swift */; };
 		2DEFC3AA2838389B00310668 /* RequestPerformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC3A92838389B00310668 /* RequestPerformer.swift */; };
@@ -33,7 +41,15 @@
 		2D62A0F228391BCE00A57193 /* BookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRequest.swift; sourceTree = "<group>"; };
 		2D62A0F42839226A00A57193 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		2D62A0F6283922AF00A57193 /* DataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParser.swift; sourceTree = "<group>"; };
-		2D62A0F82839473B00A57193 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
+		2D62A0FB28394D3100A57193 /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		2D62A0FD28394DBB00A57193 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2D6D6659283AC3280042A3E7 /* BookTypeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTypeRequest.swift; sourceTree = "<group>"; };
+		2D6D665B283AC4460042A3E7 /* ClientRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRequest.swift; sourceTree = "<group>"; };
+		2D6D6663283AC9330042A3E7 /* JournalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalRequest.swift; sourceTree = "<group>"; };
+		2D6D6665283ACA4D0042A3E7 /* BookTypesRequestsTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTypesRequestsTestView.swift; sourceTree = "<group>"; };
+		2D6D6668283BA20A0042A3E7 /* ClientsRequestTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsRequestTestView.swift; sourceTree = "<group>"; };
+		2D6D666A283BA3060042A3E7 /* JournalTestRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTestRequestsView.swift; sourceTree = "<group>"; };
+		2D6D666D283BA4580042A3E7 /* RequestsTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsTestView.swift; sourceTree = "<group>"; };
 		2DD505DA283664CE00203048 /* coursework_java.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coursework_java.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD505DD283664CE00203048 /* coursework_javaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coursework_javaApp.swift; sourceTree = "<group>"; };
 		2DD505DF283664CE00203048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +61,7 @@
 		2DEFC390283678D900310668 /* BookType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookType.swift; sourceTree = "<group>"; };
 		2DEFC392283678E000310668 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		2DEFC394283678E600310668 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
-		2DEFC3A12837BE6100310668 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2DEFC3A12837BE6100310668 /* BookRequestsTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRequestsTestView.swift; sourceTree = "<group>"; };
 		2DEFC3A32837C2B700310668 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
 		2DEFC3A52837CEDA00310668 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		2DEFC3A92838389B00310668 /* RequestPerformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestPerformer.swift; sourceTree = "<group>"; };
@@ -64,6 +80,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D62A0FA28394D0700A57193 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D6667283BA1980042A3E7 /* entity requests */,
+				2DEFC3A92838389B00310668 /* RequestPerformer.swift */,
+				2DEFC3A32837C2B700310668 /* RequestProtocol.swift */,
+				2D62A0F42839226A00A57193 /* RequestManager.swift */,
+				2DEFC3AB283838E000310668 /* AuthTokenRequest.swift */,
+				2D62A0F6283922AF00A57193 /* DataParser.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		2D6D6667283BA1980042A3E7 /* entity requests */ = {
+			isa = PBXGroup;
+			children = (
+				2D62A0F228391BCE00A57193 /* BookRequest.swift */,
+				2D6D6659283AC3280042A3E7 /* BookTypeRequest.swift */,
+				2D6D665B283AC4460042A3E7 /* ClientRequest.swift */,
+				2D6D6663283AC9330042A3E7 /* JournalRequest.swift */,
+			);
+			path = "entity requests";
+			sourceTree = "<group>";
+		};
+		2D6D666C283BA43C0042A3E7 /* requests test views */ = {
+			isa = PBXGroup;
+			children = (
+				2D6D666D283BA4580042A3E7 /* RequestsTestView.swift */,
+				2DEFC3A12837BE6100310668 /* BookRequestsTestView.swift */,
+				2D6D6665283ACA4D0042A3E7 /* BookTypesRequestsTestView.swift */,
+				2D6D6668283BA20A0042A3E7 /* ClientsRequestTestView.swift */,
+				2D6D666A283BA3060042A3E7 /* JournalTestRequestsView.swift */,
+			);
+			path = "requests test views";
+			sourceTree = "<group>";
+		};
 		2DD505D1283664CE00203048 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +142,9 @@
 				2DD505E3283664D700203048 /* Preview Content */,
 				2DD505EB283664FD00203048 /* LoginView.swift */,
 				2DD505ED2836671B00203048 /* LoginViewModel.swift */,
-				2DEFC3A12837BE6100310668 /* MainView.swift */,
-				2DEFC3A92838389B00310668 /* RequestPerformer.swift */,
-				2DEFC3A32837C2B700310668 /* RequestProtocol.swift */,
-				2D62A0F42839226A00A57193 /* RequestManager.swift */,
-				2DEFC3AB283838E000310668 /* AuthTokenRequest.swift */,
-				2D62A0F6283922AF00A57193 /* DataParser.swift */,
+				2D6D666C283BA43C0042A3E7 /* requests test views */,
+				2D62A0FB28394D3100A57193 /* BooksView.swift */,
+				2D62A0FA28394D0700A57193 /* network */,
 			);
 			path = coursework_java;
 			sourceTree = "<group>";
@@ -112,13 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				2DEFC38E283678D100310668 /* Book.swift */,
-				2D62A0F228391BCE00A57193 /* BookRequest.swift */,
 				2DEFC390283678D900310668 /* BookType.swift */,
 				2DEFC392283678E000310668 /* Client.swift */,
 				2DEFC394283678E600310668 /* Journal.swift */,
 				2DEFC3A52837CEDA00310668 /* Token.swift */,
 				2DEFC3AD283838FC00310668 /* User.swift */,
-				2D62A0F82839473B00A57193 /* Library.swift */,
+				2D62A0FD28394DBB00A57193 /* ModelData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -195,22 +243,30 @@
 			files = (
 				2DD505EE2836671B00203048 /* LoginViewModel.swift in Sources */,
 				2DEFC3AA2838389B00310668 /* RequestPerformer.swift in Sources */,
-				2DEFC3A22837BE6100310668 /* MainView.swift in Sources */,
+				2DEFC3A22837BE6100310668 /* BookRequestsTestView.swift in Sources */,
 				2D62A0F52839226A00A57193 /* RequestManager.swift in Sources */,
 				2DD505EC283664FD00203048 /* LoginView.swift in Sources */,
+				2D6D6669283BA20A0042A3E7 /* ClientsRequestTestView.swift in Sources */,
+				2D6D665A283AC3280042A3E7 /* BookTypeRequest.swift in Sources */,
 				2DD505E0283664CE00203048 /* ContentView.swift in Sources */,
 				2D62A0F7283922AF00A57193 /* DataParser.swift in Sources */,
+				2D6D666E283BA4580042A3E7 /* RequestsTestView.swift in Sources */,
 				2DEFC395283678E600310668 /* Journal.swift in Sources */,
+				2D62A0FC28394D3100A57193 /* BooksView.swift in Sources */,
 				2DEFC3AE283838FC00310668 /* User.swift in Sources */,
+				2D6D6664283AC9330042A3E7 /* JournalRequest.swift in Sources */,
 				2DD505DE283664CE00203048 /* coursework_javaApp.swift in Sources */,
 				2D62A0F328391BCE00A57193 /* BookRequest.swift in Sources */,
 				2DEFC393283678E000310668 /* Client.swift in Sources */,
+				2D6D665C283AC4460042A3E7 /* ClientRequest.swift in Sources */,
 				2DEFC3A62837CEDA00310668 /* Token.swift in Sources */,
+				2D6D6666283ACA4D0042A3E7 /* BookTypesRequestsTestView.swift in Sources */,
 				2DEFC391283678D900310668 /* BookType.swift in Sources */,
+				2D6D666B283BA3060042A3E7 /* JournalTestRequestsView.swift in Sources */,
 				2DEFC3AC283838E000310668 /* AuthTokenRequest.swift in Sources */,
 				2DEFC38F283678D100310668 /* Book.swift in Sources */,
+				2D62A0FE28394DBB00A57193 /* ModelData.swift in Sources */,
 				2DEFC3A42837C2B700310668 /* RequestProtocol.swift in Sources */,
-				2D62A0F92839473B00A57193 /* Library.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
