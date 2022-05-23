@@ -15,11 +15,10 @@ enum JournalTab {
 struct JournalView: View {
   @State var tab: JournalTab = .books
   @State var journal: Journal
-  @State private var navTitle = ""
 
   var body: some View {
     TabView {
-      BooksView(books: journal.books)
+      BooksView(journal: $journal)
         .tag(JournalTab.books)
         .tabItem {
           Image(systemName: "books.vertical")
@@ -40,6 +39,5 @@ struct JournalView: View {
 struct JournalView_Previews: PreviewProvider {
   static var previews: some View {
     JournalView(journal: Journal(id: 1, books: [], clients: [], beginDate: "abab", endDate: "abab", returnDate: "abab"))
-//      .environmentObject(ModelData())
   }
 }

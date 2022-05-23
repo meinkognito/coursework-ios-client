@@ -12,6 +12,20 @@ struct Book: Codable, Identifiable, Hashable {
   var name: String
   var count: Int
   var type: BookType
+
+  init() {
+    id = Int.random(in: 5 ..< 40)
+    name = ""
+    count = 0
+    type = BookType(id: 2, name: "", count: 0, fine: 0, dayCount: 0)
+  }
+
+  init(id: Int, name: String, count: Int, type: BookType) {
+    self.id = id
+    self.name = name
+    self.count = count
+    self.type = type
+  }
 }
 
 private actor BookServiceStore {
