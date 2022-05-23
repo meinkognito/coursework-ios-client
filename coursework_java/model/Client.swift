@@ -9,8 +9,25 @@ import Foundation
 
 struct Client: Codable, Identifiable, Hashable {
   let id: Int
-  var firstName, lastName, patherName, passportSeria: String
-  var passportNumber: String
+  var firstName, lastName, patherName, passportSeria, passportNumber: String
+
+  init() {
+    id = Int.random(in: 5 ..< 40)
+    firstName = ""
+    lastName = ""
+    patherName = ""
+    passportSeria = ""
+    passportNumber = ""
+  }
+
+  init(id: Int, firstName: String, lastName: String, patherName: String, passportSeria: String, passportNumber: String) {
+    self.id = id
+    self.firstName = firstName
+    self.lastName = lastName
+    self.patherName = patherName
+    self.passportSeria = passportSeria
+    self.passportNumber = passportNumber
+  }
 }
 
 private actor ClientServiceStore {

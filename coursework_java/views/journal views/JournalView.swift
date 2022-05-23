@@ -25,7 +25,7 @@ struct JournalView: View {
           Text("Books")
         }
 
-      ClientsView(clients: journal.clients)
+      ClientsView(journal: $journal)
         .tag(JournalTab.clients)
         .tabItem {
           Image(systemName: "person.2")
@@ -33,11 +33,5 @@ struct JournalView: View {
         }
     }
     .navigationTitle("Journal \(journal.id)")
-  }
-}
-
-struct JournalView_Previews: PreviewProvider {
-  static var previews: some View {
-    JournalView(journal: Journal(id: 1, books: [], clients: [], beginDate: "abab", endDate: "abab", returnDate: "abab"))
   }
 }

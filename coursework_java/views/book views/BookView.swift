@@ -45,7 +45,7 @@ struct BookView: View {
                 books[index] = book
               } catch {
                 print(error.localizedDescription)
-              }
+                }
             }
           }
       }
@@ -57,17 +57,3 @@ struct BookView: View {
     .padding()
   }
 }
-
-// struct BookView_Previews: PreviewProvider {
-//  static var previews: some View {
-//    BookView(book:
-//      Book(id: 7, name: "newbook", count: 10, type:
-//        BookType(
-//          id: 1,
-//          name: "newType",
-//          count: 10,
-//          fine: 10,
-//          dayCount: 10
-//        )))
-//  }
-// }

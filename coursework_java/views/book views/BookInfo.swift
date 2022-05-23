@@ -42,17 +42,3 @@ struct BookInfo: View {
     .navigationBarTitleDisplayMode(.large)
   }
 }
-
-struct BookInfo_Previews: PreviewProvider {
-  static var previews: some View {
-    BookInfo(book:
-      Book(id: 7, name: "newbook", count: 10, type:
-        BookType(
-          id: 1,
-          name: "newType",
-          count: 10,
-          fine: 10,
-          dayCount: 10
-        )))
-  }
-}

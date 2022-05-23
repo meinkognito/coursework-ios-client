@@ -8,45 +8,52 @@
 import SwiftUI
 
 struct ClientView: View {
+  @Environment(\.editMode) var editMode
   @State var client: Client
+  @State private var draftClient = Client()
+  @Binding var clients: [Client]
+  @State private var index = 0
 
   var body: some View {
     VStack(alignment: .leading) {
       HStack {
-        Text("Pather name: ")
-        Text("\(client.patherName)")
-          .bold()
-      }.font(.title3)
-      Divider()
-        .padding()
-      Text("Passport info")
-        .font(.title2.bold())
-        .padding(.bottom)
-      HStack {
-        Text("Seria: ")
-        Text("\(client.passportSeria)").bold()
-      }.font(.title3)
-        .padding(.bottom)
-      HStack {
-        Text("Number: ")
-        Text("\(client.passportNumber)").bold()
-      }.font(.title3)
-        .padding(.bottom)
-      Spacer()
+        if editMode?.wrappedValue == .active {
+          Button("Cancel", role: .cancel) {
+            draftClient = client
+            editMode?.animation().wrappedValue = .inactive
+          }
+        }
+
+        Spacer()
+        EditButton()
+      }
+
+      if editMode?.wrappedValue == .inactive {
+        ClientInfo(client: client)
+      } else {
+        ClientEditor(client: $draftClient)
+          .onAppear {
+            draftClient = client
+          }
+          .onDisappear {
+            client = draftClient
+            Task {
+              do {
+                let _: Client = try await RequestManager().perform(
+                  ClientRequest.update(id: client.id, with: draftClient)
+                )
+                clients[index] = client
+              } catch {
+                print(error.localizedDescription)
+              }
+            }
+          }
+      }
+    }
+    .onAppear {
+      draftClient = client
+      index = clients.firstIndex(of: client) ?? 0
     }
     .padding()
-    .navigationTitle("\(client.firstName) \(client.lastName)")
-    .navigationBarTitleDisplayMode(.large)
-  }
-}
-
-struct ClientVIew_Previews: PreviewProvider {
-  static var previews: some View {
-    ClientView(client: Client(id: 1,
-                              firstName: "abab",
-                              lastName: "abab",
-                              patherName: "abab",
-                              passportSeria: "abab",
-                              passportNumber: "abab"))
   }
 }
